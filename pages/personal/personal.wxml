@@ -1,2 +1,40 @@
 <!--pages/personal/personal.wxml-->
-<text>个人中心</text>
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">18227752005</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-cells weui-cells_after-title">
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd iconfont icon-trading"></view>
+                <view class="weui-cell__bd">交易密码</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd iconfont icon-bank-card"></view>
+                <view class="weui-cell__bd">绑定银行卡</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd iconfont icon-recharge"></view>
+                <view class="weui-cell__bd">在线充值</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd iconfont icon-account"></view>
+                <view class="weui-cell__bd">账户详情</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd iconfont icon-safety"></view>
+                <view class="weui-cell__bd">安全中心</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd iconfont icon-profit"></view>
+                <view class="weui-cell__bd">收益详情</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+        </view>
+    </view>
+</view>

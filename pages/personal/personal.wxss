@@ -1,1 +1,4 @@
 /* pages/personal/personal.wxss */
+.weui-cell__hd {
+  margin-right: 15rpx;
+}
