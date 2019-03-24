@@ -1,4 +1,18 @@
 /* pages/personal/personal.wxss */
+.page__title {
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.page__desc {
+  margin-left: 15rpx;
+}
+.page__desc2 {
+  margin-right: 15rpx;
+}
+
 .weui-cell__hd {
   margin-right: 15rpx;
 }

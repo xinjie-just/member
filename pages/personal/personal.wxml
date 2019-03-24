@@ -1,19 +1,24 @@
 <!--pages/personal/personal.wxml-->
+<!--个人中心-->
 <view class="page">
     <view class="page__hd">
-        <view class="page__title">18227752005</view>
+        <!--登录状态-->
+        <view wx:if="{{status}}" class="page__title iconfont icon-member">
+          <text class="page__desc">18227752005</text>
+        </view>       
     </view>
     <view class="page__bd">
         <view class="weui-cells weui-cells_after-title">
             <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd iconfont icon-trading"></view>
                 <view class="weui-cell__bd">交易密码</view>
-                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">******</view>
             </navigator>
             <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd iconfont icon-bank-card"></view>
                 <view class="weui-cell__bd">绑定银行卡</view>
-                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                <!--当前绑定固定银行卡张数-->
+                <view class="weui-cell__ft weui-cell__ft_in-access">1张</view>
             </navigator>
             <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd iconfont icon-recharge"></view>
@@ -36,5 +41,13 @@
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
             </navigator>
         </view>
+    </view>    
+    <view wx:if="{{status}}" class="weui-btn-area">
+        <button type="primary" bindtap="logout" disabled="{{disabled}}">退出登录</button>
+    </view>
+                
+    <!--未登录状态--> 
+    <view wx:if="{{!status}}" class="weui-btn-area">            
+        <button type="primary" class="weui-btn">登录</button>
     </view>
 </view>
