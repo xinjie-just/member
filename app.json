@@ -1,9 +1,11 @@
 {
   "pages": [
+    "pages/personal/bank-card/bank-card-verify/bank-card-verify",
+    "pages/personal/bank-card/bank-card",
+    "pages/seller/seller",
     "pages/personal/personal",
     "pages/order/order",
-    "pages/index/index",
-    "pages/seller/seller"
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
