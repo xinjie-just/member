@@ -1,5 +1,8 @@
 {
   "pages": [
+    "pages/personal/account/questions-answers/questions-answers",
+    "pages/personal/account/account-details/account-details",
+    "pages/personal/account/account",
     "pages/personal/bank-card/bank-card-verify/bank-card-verify",
     "pages/personal/bank-card/bank-card",
     "pages/seller/seller",

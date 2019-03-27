@@ -1,0 +1,28 @@
+<!--账户详情-->
+<view class="account-details">
+    <view class="balance">
+        <view class="heading">账户余额</view>
+        <view class="body">2030元</view>
+    </view>
+    <view class="account-details-item member-card">
+        <text class="heading">会员卡一：</text>
+        <text class="body">火锅店一</text>
+    </view>
+    <view class="account-details-item desc">
+        <text class="heading">包含项目：</text>
+        <text class="body">李芯杰李芯杰李芯杰李芯杰李芯杰李芯杰李芯杰李芯杰李芯杰李芯杰李芯杰李芯杰</text>
+    </view>
+    <view class="account-details-item start-date">
+        <text class="heading">充值日期：</text>
+        <text class="body">2018-12-14</text>
+    </view>
+    <view class="account-details-item end-date">
+        <text class="heading">到期日期：</text>
+        <text class="body">2019-12-14</text>
+    </view>
+</view>
+<view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__links">
+        <navigator url="" class="weui-footer__link">常见问题？</navigator>
+    </view>
+</view>

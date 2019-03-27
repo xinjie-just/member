@@ -1,0 +1,37 @@
+/* pages/personal/account/account.wxss */
+.card-list {
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+}
+.card-item {
+  padding: 25rpx;
+  width: 90%;
+  margin: 20rpx auto;
+  background-color: #04aa56;
+  border-radius: 10rpx;
+}
+.card-item .title {
+  line-height: 1.5;
+  font-size: 36rpx;
+  color: #fff;
+  margin-bottom: .5em;
+}
+.card-item .info {
+  font-size: 30rpx;
+  color: #fff;
+}
+.card-item .info::before {
+  display: table;
+  content: "";
+}
+.card-item .info::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+.date {
+  float: left;
+}
+.balance {
+  float: right;
+}

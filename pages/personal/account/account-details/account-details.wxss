@@ -1,0 +1,31 @@
+/* pages/personal/account/account-details/account-details.wxss */
+.account-details {  
+  padding: 15rpx;
+  font-size: 34rpx;
+}
+.account-details-item {
+  display: flex;
+  line-height: 1.6;
+  color: #333;
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+}
+.account-details-item .heading {
+  margin-right: 25rpx;
+}
+.account-details-item .body {
+  color: #666;
+  flex: 1;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.balance {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.balance .heading {
+  margin-bottom: .3em;
+}
+.balance .body {
+  font-size: 1.6em;
+}

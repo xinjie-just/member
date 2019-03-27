@@ -8,7 +8,7 @@
                     <view class="weui-label">持卡人</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <input class="weui-input" placeholder="请输入持卡人姓名"/>
+                    <input type="text" class="weui-input" placeholder="请输入持卡人姓名"/>
                 </view>
             </view>
             <view class="weui-cell weui-cell_input weui-cell_vcode">
