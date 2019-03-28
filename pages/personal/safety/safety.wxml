@@ -1,0 +1,12 @@
+<!--pages/personal/safety/safety.wxml-->
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-cells weui-cells_after-title">
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd iconfont icon-change-password"></view>
+                <view class="weui-cell__bd">修改登录密码</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+        </view>        
+    </view>
+</view>
