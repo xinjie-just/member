@@ -1,4 +1,4 @@
-// pages/personal/safety/verify/new-password.js
+// pages/personal/profit/profit-detail/profit-detail.js
 Page({
 
   /**

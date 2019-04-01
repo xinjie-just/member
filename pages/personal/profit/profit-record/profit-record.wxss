@@ -1,0 +1,11 @@
+/* pages/personal/profit/profit-record/profit-record.wxss */
+.weui-cell {
+  font-size: 30rpx;
+}
+.weui-cell__bd {
+  font-size: 1em;
+}
+.weui-cell .weui-cell__ft {
+  font-size: 1.2em;
+  color: #ea8010;
+}

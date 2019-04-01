@@ -1,0 +1,47 @@
+<!--收益-->
+<view class="profit-list">
+    <view class="profit-item">
+        <text class="title">会员卡一(火锅店火锅店火锅店火锅店1)</text>
+        <text class="profit">总收益：99999.99元</text>
+    </view>
+    <view class="profit-item">
+        <text class="title">会员卡一(火锅店1)</text>
+        <text class="profit">总收益：3048元</text>
+    </view>
+    <view class="profit-item">
+        <text class="title">会员卡二(火锅店2)</text>
+        <text class="profit">总收益：20.48元</text>
+    </view>
+    <view class="profit-item">
+        <text class="title">会员卡三(火锅店3)</text>
+        <text class="profit">总收益：2.048元</text>
+    </view>
+    <view class="profit-item">
+        <text class="title">会员卡四(火锅店4)</text>
+        <text class="profit">总收益：204.8元</text>
+    </view>
+    <view class="profit-item">
+        <text class="title">会员卡五(火锅店5)</text>
+        <text class="profit">总收益：2548元</text>
+    </view>
+    <view class="profit-item">
+        <text class="title">会员卡六(火锅店6)</text>
+        <text class="profit">总收益：2018元</text>
+    </view>
+    <view class="profit-item">
+        <text class="title">会员卡七(火锅店7)</text>
+        <text class="profit">总收益：78元</text>
+    </view>
+    <view class="profit-item">
+        <text class="title">会员卡九(火锅店9)</text>
+        <text class="profit">总收益：2048元</text>
+    </view>
+    <view class="profit-item">
+        <text class="title">会员卡十(火锅店10)</text>
+        <text class="profit">总收益：28元</text>
+    </view>
+    <view class="profit-item">
+        <text class="title">会员卡十一(火锅店11)</text>
+        <text class="profit">总收益：208208208208元</text>
+    </view>
+</view>

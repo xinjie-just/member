@@ -1,0 +1,43 @@
+<!--收益记录-->
+<view class="page">
+    <view class="page__hd">        
+        <view class="weui-cell weui-cell_select">
+            <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                <view class="weui-label">日期</view>
+            </view>
+            <view class="weui-cell__bd">
+                <picker mode="date" value="{{date}}" start="2015-09" end="2019-09" bindtap="clicktap" fields="month" bindchange="bindDateChange">
+                    <view class="weui-select weui-select_in-select-after">{{date}}</view>
+                </picker>
+            </view>
+        </view>
+    </view>
+    <view class="page__bd">        
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">2018年3月23日 15:00:00</view>
+                <view class="weui-cell__ft">230205</view>
+            </view>
+            <view class="weui-cell">
+                <view class="weui-cell__bd">2017年4月23日 15:80:00</view>
+                <view class="weui-cell__ft">2.3</view>
+            </view>
+            <view class="weui-cell">
+                <view class="weui-cell__bd">2017年3月23日 15:08:00</view>
+                <view class="weui-cell__ft">0.23</view>
+            </view>
+            <view class="weui-cell">
+                <view class="weui-cell__bd">2017年3月23日 15:00:00</view>
+                <view class="weui-cell__ft">2.23</view>
+            </view>
+            <view class="weui-cell">
+                <view class="weui-cell__bd">2016年8月23日 17:00:00</view>
+                <view class="weui-cell__ft">23</view>
+            </view>
+            <view class="weui-cell">
+                <view class="weui-cell__bd">2017年3月28日 15:00:00</view>
+                <view class="weui-cell__ft">23.03</view>
+            </view>
+        </view>
+    </view>
+</view>

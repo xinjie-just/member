@@ -49,4 +49,46 @@
             <text class="balance">余额2048元</text>
         </view>
     </view>
+    <view class="card-item">
+        <view class="title">会员卡一(火锅店1)</view>
+        <view class="info">
+            <text class="date">2019年12月31日到期</text>
+            <text class="balance">余额2048元</text>
+        </view>
+    </view>
+    <view class="card-item">
+        <view class="title">会员卡一(火锅店1)</view>
+        <view class="info">
+            <text class="date">2019年12月31日到期</text>
+            <text class="balance">余额2048元</text>
+        </view>
+    </view>
+    <view class="card-item">
+        <view class="title">会员卡一(火锅店1)</view>
+        <view class="info">
+            <text class="date">2019年12月31日到期</text>
+            <text class="balance">余额2048元</text>
+        </view>
+    </view>
+    <view class="card-item">
+        <view class="title">会员卡一(火锅店1)</view>
+        <view class="info">
+            <text class="date">2019年12月31日到期</text>
+            <text class="balance">余额2048元</text>
+        </view>
+    </view>
+    <view class="card-item">
+        <view class="title">会员卡一(火锅店1)</view>
+        <view class="info">
+            <text class="date">2019年12月31日到期</text>
+            <text class="balance">余额2048元</text>
+        </view>
+    </view>
+    <view class="card-item">
+        <view class="title">会员卡一(火锅店1)</view>
+        <view class="info">
+            <text class="date">2019年12月31日到期</text>
+            <text class="balance">余额2048元</text>
+        </view>
+    </view>
 </view>

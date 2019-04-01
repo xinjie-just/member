@@ -1,0 +1,15 @@
+<!--收益详情-->
+<view class="profit-details">
+    <view class="yesterday-profit">
+        <view class="heading">昨日收益(元)</view>
+        <view class="body">2030</view>
+    </view>
+    <view class="profit-details-item">
+        <text class="heading">会员卡一：</text>
+        <text class="body">火锅店一</text>
+    </view>
+    <view class="profit-details-item total-profit">
+        <view class="heading">总收益(元)：</view>
+        <view class="body">20030</view>
+    </view>
+</view>

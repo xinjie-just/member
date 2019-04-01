@@ -7,8 +7,31 @@
   padding: 25rpx;
   width: 90%;
   margin: 20rpx auto;
-  background-color: #04aa56;
   border-radius: 10rpx;
+}
+.card-item:nth-of-type(8n + 1) {
+  background-color: #ff4646;
+}
+.card-item:nth-of-type(8n + 2) {
+  background-color: #4250c4;
+}
+.card-item:nth-of-type(8n + 3) {
+  background-color: #00bb9c;
+}
+.card-item:nth-of-type(8n + 4) {
+  background-color: #ea8010;
+}
+.card-item:nth-of-type(8n + 5) {
+  background-color: #1b99e6;
+}
+.card-item:nth-of-type(8n + 6) {
+  background-color: #ab67b4;
+}
+.card-item:nth-of-type(8n + 7) {
+  background-color: #05c363;
+}
+.card-item:nth-of-type(8n + 8) {
+  background-color: #21b3ec;
 }
 .card-item .title {
   line-height: 1.5;
