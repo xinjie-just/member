@@ -1,1 +1,18 @@
-<text>Hello World</text>
+<!--首页-->
+<view class="page">
+  <view bindtap="toPersonal" class="personal-info">
+    <image src="/assets/images/head-portrait.jpg" class="head-portrait-img"></image>
+    <text class="phone">18227752005</text>
+  </view>
+  <view class="profit">
+    <view class="yesterday-profit">
+        <view class="heading">昨日收益(元)</view>
+        <view class="body">100.00</view>
+    </view>
+    <view class="total-profit">总收益(元)：2030.50</view>
+  </view>
+  <view class="expend">
+    <view class="consume">本月总消费(元)：5800.25</view>
+    <view class="order-count">本月总订单数(单)：57</view>
+  </view>
+</view>

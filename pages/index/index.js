@@ -6,6 +6,12 @@ Page({
   data: {
     
   },
+  
+  toPersonal() {
+    wx.switchTab({
+      url: '/pages/personal/personal'
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
