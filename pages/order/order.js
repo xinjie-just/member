@@ -5,7 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    date: "2016-09",
+    noData: false
+  },
+  bindDateChange: function (e) {
+    this.setData({
+      date: e.detail.value
+    })
   },
 
   /**

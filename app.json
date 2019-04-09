@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/order/order",
     "pages/personal/profit/profit-record/profit-record",
+    "pages/index/index",
     "pages/personal/profit/profit-detail/profit-detail",
     "pages/personal/profit/profit",
     "pages/personal/account/account",
@@ -14,8 +15,7 @@
     "pages/personal/bank-card/bank-card",
     "pages/personal/bank-card/bank-card-verify/bank-card-verify",
     "pages/seller/seller",
-    "pages/personal/personal",
-    "pages/order/order"
+    "pages/personal/personal"
   ],
   "window": {
     "backgroundTextStyle": "light",

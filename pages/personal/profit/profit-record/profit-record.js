@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    date: "2016-09",
+    date: "2016-09"
   },
   clicktap(e) {
     console.log(e);
