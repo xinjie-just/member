@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/order/order-detail/order-detail",
     "pages/order/order",
     "pages/personal/profit/profit-record/profit-record",
     "pages/index/index",

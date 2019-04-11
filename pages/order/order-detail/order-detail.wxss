@@ -1,0 +1,44 @@
+/* pages/order/order-detail/order-detail.wxss */
+.page {
+  padding-right: 30rpx;
+  padding-left: 30rpx;
+}
+.page-header {
+  padding-top: 30rpx;
+  padding-bottom: 40rpx;
+  font-size: 34rpx;
+  color: #333;
+}
+.page-header .amount {
+  margin-bottom: 10rpx;
+  font-size: 2em;
+  text-align: center;
+}
+.page-header .amount .unit {
+  font-size: .5em;
+  margin-left: .3em;
+  color: #666;
+}
+.page-header .status {
+  color: #666;
+  text-align: center;
+}
+
+.detail-info-item {
+  font-size: 38rpx;
+  color: #666;
+  line-height: 1.6;
+  display: flex;
+}
+.detail-info-item .title {
+  color: #333;
+  margin-right: .3em;
+}
+.detail-info-item .content {
+  color: #666;
+  flex: 1;
+  word-break: break-all;
+}
+.detail-info-item:not(:last-of-type) {
+  margin-bottom: 30rpx;
+}
