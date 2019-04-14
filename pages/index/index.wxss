@@ -6,11 +6,11 @@
   font-size: 30rpx;
 }
 .page > view {
-  padding: 1em 1.2em;
+  padding: 1.5em 1.2em;
   background-color: #fff;
 }
 .page > view:not(:last-of-type) {
-  margin-bottom: .6em;
+  margin-bottom: .8em;
 }
 .personal-info {
   display: flex;
@@ -52,10 +52,10 @@
   margin-bottom: .6em;
 }
 .profit .yesterday-profit .heading {
-  margin-bottom: .2em;
+  margin-bottom: .4em;
 }
 .profit .yesterday-profit .body {
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 .total-profit {
   text-align: center;
@@ -66,5 +66,5 @@
   text-align: center;
 }
 .expend > view:not(:last-of-type) {
-  margin-bottom: .4em;
+  margin-bottom: .6em;
 }

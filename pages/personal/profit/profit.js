@@ -8,6 +8,12 @@ Page({
 
   },
 
+  view() {
+    wx.navigateTo({
+      url: "profit-detail/profit-detail"
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

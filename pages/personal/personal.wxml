@@ -14,7 +14,7 @@
                 <view class="weui-cell__bd">交易密码</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access">******</view>
             </navigator>
-            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <navigator url="bank-card/bank-card" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd iconfont icon-bank-card"></view>
                 <view class="weui-cell__bd">绑定银行卡</view>
                 <!--当前绑定固定银行卡张数-->
@@ -25,17 +25,17 @@
                 <view class="weui-cell__bd">在线充值</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
             </navigator>
-            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <navigator url="account/account" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd iconfont icon-account"></view>
                 <view class="weui-cell__bd">账户详情</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
             </navigator>
-            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <navigator url="safety/safety" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd iconfont icon-safety"></view>
                 <view class="weui-cell__bd">安全中心</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
             </navigator>
-            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <navigator url="profit/profit" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd iconfont icon-profit"></view>
                 <view class="weui-cell__bd">收益详情</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>

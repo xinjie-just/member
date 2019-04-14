@@ -5,9 +5,21 @@
     <view class="status">已支付</view>
   </view>
   <view class="page-body">
-    <view class="detail-info-item"><text class="title">商品说明：</text><text class="content">奇迹健身(一品天下店)奇迹健身(一品天下店)奇迹健身(一品天下店)奇迹健身(一品天下店)健身1次</text></view>
-    <view class="detail-info-item"><text class="title">付款信息：</text><text class="content">会员卡</text></view>
-    <view class="detail-info-item"><text class="title">时间：</text><text class="content">2017年10月23日 10:23:34</text></view>
-    <view class="detail-info-item"><text class="title">交易编号：</text><text class="content">123456789654321123456789654321123456789654321123456789654321</text></view>
+    <view class="detail-info-item">
+      <text class="title">商品说明：</text>
+      <text class="content">奇迹健身(一品天下店)健身1次</text>
+    </view>
+    <view class="detail-info-item">
+      <text class="title">付款信息：</text>
+      <text class="content">会员卡</text>
+    </view>
+    <view class="detail-info-item">
+      <text class="title">交易时间：</text>
+      <text class="content">2017年10月23日 10:23:34</text>
+    </view>
+    <view class="detail-info-item">
+      <text class="title">交易编号：</text>
+      <text class="content">20190413181818123456</text>
+    </view>
   </view>
 </view>

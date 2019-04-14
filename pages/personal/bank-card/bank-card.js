@@ -16,6 +16,12 @@ Page({
     })
   },
 
+  next() {
+    wx.navigateTo({
+      url: "bank-card-verify/bank-card-verify",
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

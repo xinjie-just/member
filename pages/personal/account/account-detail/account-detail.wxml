@@ -1,8 +1,8 @@
 <!--账户详情-->
 <view class="account-details">
     <view class="balance">
-        <view class="heading">账户余额</view>
-        <view class="body">2030元</view>
+        <view class="heading">账户余额(元)</view>
+        <view class="body">2030.85</view>
     </view>
     <view class="account-details-item member-card">
         <text class="heading">会员卡一：</text>
@@ -10,7 +10,7 @@
     </view>
     <view class="account-details-item desc">
         <text class="heading">包含项目：</text>
-        <text class="body">李芯杰李芯杰李芯杰李芯杰李芯杰李芯杰李芯杰李芯杰李芯杰李芯杰李芯杰李芯杰</text>
+        <text class="body">健身和休闲娱乐</text>
     </view>
     <view class="account-details-item start-date">
         <text class="heading">充值日期：</text>
@@ -23,6 +23,6 @@
 </view>
 <view class="weui-footer weui-footer_fixed-bottom">
     <view class="weui-footer__links">
-        <navigator url="" class="weui-footer__link">常见问题？</navigator>
+        <navigator url="../questions-answers/questions-answers" class="weui-footer__link">常见问题？</navigator>
     </view>
 </view>

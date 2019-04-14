@@ -10,6 +10,12 @@ Page({
     }
   },
 
+  next() {
+    wx.redirectTo({
+      url: '../new-password/new-password'
+    })
+  },
+
   /**
    * 页面的初始数据
    */
