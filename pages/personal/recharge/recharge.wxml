@@ -1,0 +1,23 @@
+<!--选择会员卡-->
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-cells__title">选择充值会员卡</view>
+        <view class="weui-cells weui-cells_after-title">
+            <radio-group bindchange="radioChange">
+                <label class="weui-cell weui-check__label" wx:for="{{radioItems}}" wx:key="value">
+                    <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+
+                    <view class="weui-cell__bd">{{item.name}}</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+                        <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+                    </view>
+                </label>
+            </radio-group>
+        </view>
+        <view class="weui-cells__tips">底部说明文字底部说明文字</view>
+
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" bindtap="next">下一步</button>
+        </view>
+    </view>
+</view>

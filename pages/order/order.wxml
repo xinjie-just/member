@@ -18,11 +18,11 @@
                 <view class="weui-cell__bd">奇迹健身(一品天下店)</view>
                 <view class="weui-cell__ft">2016年6月23日 15:00:00</view>
             </view>
-            <view class="weui-cell">
+            <view class="weui-cell" bindtap="view">
                 <view class="weui-cell__bd">奇迹健身(天府广场店)</view>
                 <view class="weui-cell__ft">2016年6月3日 08:00:00</view>
             </view>
-            <view class="weui-cell">
+            <view class="weui-cell" bindtap="view">
                 <view class="weui-cell__bd">奇迹健身</view>
                 <view class="weui-cell__ft">2016年6月23日 15:00:00</view>
             </view>

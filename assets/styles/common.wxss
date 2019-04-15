@@ -1,3 +1,6 @@
+page {
+  font-size: 32rpx;
+}
 .no-data-container {
   width: 100vw;
   height: 100vh;
