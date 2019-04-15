@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/personal/personal",
     "pages/personal/account/account",
-    "pages/index/index",
     "pages/personal/profit/profit",
     "pages/order/order-detail/order-detail",
     "pages/order/order",
