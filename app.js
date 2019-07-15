@@ -34,6 +34,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    host: 'http://www.tuobeichina.com:8000/',
+    apiurl: 'http://www.tuobeichina.com:8000/api/1.0/'
   }
 })

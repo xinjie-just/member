@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/index/index",
     "pages/personal/recharge/recharge",
     "pages/personal/recharge/sum/sum",
@@ -51,5 +52,6 @@
     "color": "#333333",
     "selectedColor": "#04aa56",
     "backgroundColor": "#ffffff"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

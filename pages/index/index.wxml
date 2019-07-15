@@ -1,8 +1,8 @@
 <!--首页-->
 <view class="page">
   <view bindtap="toPersonal" class="personal-info">
-    <image src="/assets/images/head-portrait.jpg" class="head-portrait-img"></image>
-    <text class="phone">18227752005</text>
+    <image src="{{avatarUrl}}" class="head-portrait-img"></image>
+    <text class="phone">{{nickName}}</text>
   </view>
   <view class="profit">
     <view class="yesterday-profit">
