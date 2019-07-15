@@ -1,23 +1,26 @@
-// pages/login/login.js
+let app = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    APIUrlBase: app.globalData.APIUrlBase
   },
 
-  phoneLogin: function (event) {
-    wx.navigateTo({
-      url: 'phone-login/phone-login',
+  getCode: function() {
+    wx.request({
+      url: this.data.APIUrlBase + "/sendSmsCode?phone=" + 18227752005,
+      header: {
+        "Content-Type": "application/json"
+      },
+      method: "GET",
+      success: function (res) {
+        console.log(res.code);
+      },
+      fail: function (error) { }
     })
-  },
-
-  onGotUserInfo: function(event) {
-    console.log(event.detail.errMsg)
-    console.log(event.detail.userInfo)
-    console.log(event.detail.rawData)
   },
 
   /**

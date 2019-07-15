@@ -2,8 +2,7 @@ page {
   min-height: 100vh;
 }
 .page {
-  padding: 20rpx 4%;
-  margin-top: 30%;
+  padding: 30% 4%;
 }
 .logo {
   margin-bottom: 160rpx;
@@ -41,8 +40,8 @@ page {
 }
 .login-select .phone-login {
   background-color: transparent;
-  color: #666;
-  border: 1px solid #dadada;
+  color: #179b16;
+  border: 1px solid #179b16;
 }
 
 .login-select button text {

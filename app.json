@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/login/login",
+    "pages/login/phone-login/phone-login",
     "pages/index/index",
     "pages/personal/recharge/recharge",
     "pages/personal/recharge/sum/sum",
