@@ -1,21 +1,11 @@
-// pages/seller/seller.js
+// pages/order/pay/pay-result/pay-result.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    sellers: ["所有商家", "已联盟商家", "未联盟商家"],
-    sellerIndex: 0,
-    noData: false
-  },
-
-  bindSellerChange: function (e) {
-    console.log('picker seller 发生选择改变，携带值为', e.detail.value);
-
-    this.setData({
-      sellerIndex: e.detail.value
-    })
+    success: true
   },
 
   /**

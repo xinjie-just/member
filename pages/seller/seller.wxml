@@ -1,2 +1,35 @@
-<!--pages/seller/seller.wxml-->
-<text style="text-align: center; display: block;">商家联盟模块开发中</text>
+<view class="page" wx:if="{{!noData}}">
+  <view class="page__hd">
+    <view class="weui-cell weui-cell_select">
+      <view class="weui-cell__hd weui-cell__hd_in-select-after">
+        <view class="weui-label">商家</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker bindchange="bindSellerChange" value="{{sellerIndex}}" range="{{sellers}}">
+          <view class="weui-select weui-select_in-select-after">{{sellers[sellerIndex]}}</view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-panel__bd">
+      <navigator url="seller-detail/seller-detail" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" src="http://via.placeholder.com/60" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">奇迹健身（一品天下店）</view>
+          <view class="weui-media-box__desc">
+            <text class="discount">会员享受5折</text>
+            <text class="distance">1.6km</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>
+
+<view class="page no-data-container" wx:if="{{noData}}">
+  <view class="iconfont icon-no-data no-data-icon"></view>
+  <view class="no-data-text">暂无商家</view>
+</view>

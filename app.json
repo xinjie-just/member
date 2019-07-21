@@ -1,5 +1,10 @@
 {
   "pages": [
+    "pages/order/pay/pay",
+    "pages/seller/seller",
+    "pages/seller/seller-detail/seller-detail",
+    "pages/order/order",
+    "pages/order/order-detail/order-detail",
     "pages/login/login",
     "pages/login/phone-login/phone-login",
     "pages/index/index",
@@ -19,9 +24,7 @@
     "pages/personal/bank-card/bank-card",
     "pages/personal/bank-card/bank-card-verify/bank-card-verify",
     "pages/personal/traders-password/traders-password",
-    "pages/seller/seller",
-    "pages/order/order",
-    "pages/order/order-detail/order-detail"
+    "pages/order/pay/pay-result/pay-result"
   ],
   "window": {
     "backgroundTextStyle": "light",

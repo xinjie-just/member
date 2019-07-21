@@ -1,20 +1,32 @@
-// pages/seller/seller.js
+// pages/order/pay/pay.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    sellers: ["所有商家", "已联盟商家", "未联盟商家"],
-    sellerIndex: 0,
-    noData: false
+    radioItems: [
+      { card: '会员卡1会员卡1会员卡1', "amount": 200, value: '0' },
+      { card: '会员卡2', "amount": 99999.99, value: '1', checked: true }
+    ],
   },
 
-  bindSellerChange: function (e) {
-    console.log('picker seller 发生选择改变，携带值为', e.detail.value);
+  radioChange: function (e) {
+    console.log('radio发生change事件，携带value值为：', e.detail.value);
+
+    var radioItems = this.data.radioItems;
+    for (var i = 0, len = radioItems.length; i < len; ++i) {
+      radioItems[i].checked = radioItems[i].value == e.detail.value;
+    }
 
     this.setData({
-      sellerIndex: e.detail.value
+      radioItems: radioItems
+    });
+  },
+
+  confirmePay: function() {
+    wx.navigateTo({
+      url: "pay-result/pay-result"
     })
   },
 

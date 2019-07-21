@@ -1,0 +1,41 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">XX商家</view>
+    <view class="page__desc">请尽快完成支付，超时订单将自动取消</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-cells__title">请输入支付金额</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">金额</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" type="digit" placeholder="请输入本次支付金额" />
+        </view>
+        <view class="weui-cell__ft">元</view>
+      </view>
+    </view>
+    <view class="weui-cells__title">请选择付款方式</view>
+    <view class="weui-cells weui-cells_after-title">
+      <radio-group bindchange="radioChange">
+        <label class="weui-cell weui-check__label" wx:for="{{radioItems}}" wx:key="value">
+          <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}" />
+
+          <view class="weui-cell__bd">
+            <text class="card">{{item.card}}</text>
+            <text class="amount">余额：{{item.amount}}元</text>
+          </view>
+          <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+            <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+          </view>
+        </label>
+      </radio-group>
+    </view>
+    <view class="weui-cells__tips">底部说明文字底部说明文字</view>
+
+    <view class="weui-btn-area">
+      <button class="weui-btn" type="primary" bindtap="confirmePay">确认</button>
+    </view>
+  </view>
+</view>

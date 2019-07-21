@@ -1,1 +1,4 @@
-/* pages/seller/seller.wxss */
+.weui-media-box__desc {
+  display: flex;
+  justify-content: space-between;
+}
