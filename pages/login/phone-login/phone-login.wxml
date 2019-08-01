@@ -4,19 +4,19 @@
     <view class="weui-cells weui-cells_after-title">
       <view class="weui-cell weui-cell_input weui-cell_vcode">
         <view class="weui-cell__bd">
-          <input class="weui-input" placeholder="请输入手机号" />
+          <input class="weui-input" name="phone" placeholder="请输入手机号" bindblur="getPhone" />
         </view>
         <view class="weui-cell__ft">
-          <view class="weui-vcode-btn" catchtap="getCode">获取验证码</view>
+          <button class="weui-vcode-btn" disabled="{{!codeBtnEnabled}}" catchtap="getCode">{{codeTip}}</button>
         </view>
       </view>
       <view class="weui-cell weui-cell_input weui-cell_vcode">
         <view class="weui-cell__bd">
-          <input class="weui-input" placeholder="请输入验证码" />
+          <input class="weui-input" name="code" placeholder="请输入验证码" />
         </view>
       </view>
     </view>
-    <view class="weui-cells__tips">底部说明文字底部说明文字</view>
+    <view class="weui-cells__tips">{{errorInfo}}</view>
 
     <view class="weui-btn-area">
       <button class="weui-btn" type="primary" bindtap="showTopTips">登录</button>

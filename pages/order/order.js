@@ -1,10 +1,12 @@
-// pages/order/order.js
+let app = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    APIUrlBase: app.globalData.APIUrlBase,
     date: "2016-09",
     noData: false
   },
@@ -24,7 +26,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.request({
+      url: this.data.APIUrlBase + "userOrderList?userId=" + 2 + "&pageNo=" + 1 + "&pageSize=" + 10,
+      method: "GET",
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success(res) {
+        console.log(res.data);
+      },
+      fail(error) {
+        console.log("error");
+      }
+    })
   },
 
   /**

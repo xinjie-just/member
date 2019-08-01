@@ -34,7 +34,7 @@ App({
     })
   },
   globalData: {
-    'host': 'http://www.tuobeichina.com:8000/',
-    'APIUrlBase': 'http://www.tuobeichina.com:8000/api/1.0/'
+    'host': 'https://www.tuobeichina.com:8443/',
+    'APIUrlBase': 'https://www.tuobeichina.com:8443/api/1.0/'
   }
 })

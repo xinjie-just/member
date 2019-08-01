@@ -1,3 +1,4 @@
+let app = getApp();
 // pages/personal/account/account-details/account-details.js
 Page({
 
@@ -5,14 +6,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    APIUrlBase: app.globalData.APIUrlBase
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.request({
+      url: this.data.APIUrlBase + "userCardList?userId=" + 2,
+      method: "GET",
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success(res) {
+        console.log(res.data);
+      },
+      fail(error) {
+        console.log("error");
+      }
+    })
   },
 
   /**
