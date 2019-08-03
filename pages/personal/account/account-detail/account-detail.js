@@ -14,7 +14,7 @@ Page({
    */
   onLoad: function (options) {
     wx.request({
-      url: this.data.APIUrlBase + "userCardList?userId=" + 2,
+      url: this.data.APIUrlBase + "getCardDetailById?cardId=" + 2,
       method: "GET",
       header: {
         'content-type': 'application/json' // 默认值

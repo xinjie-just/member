@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/login/phone-login/phone-login",
+    "pages/personal/account/account",
     "pages/personal/account/account-detail/account-detail",
+    "pages/login/phone-login/phone-login",
     "pages/order/order",
     "pages/order/order-detail/order-detail",
     "pages/order/pay/pay",
@@ -12,7 +13,6 @@
     "pages/personal/recharge/recharge",
     "pages/personal/recharge/sum/sum",
     "pages/personal/personal",
-    "pages/personal/account/account",
     "pages/personal/profit/profit",
     "pages/personal/profit/profit-record/profit-record",
     "pages/personal/profit/profit-detail/profit-detail",
