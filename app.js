@@ -35,6 +35,7 @@ App({
   },
   globalData: {
     'host': 'https://www.tuobeichina.com:8443/',
-    'APIUrlBase': 'https://www.tuobeichina.com:8443/api/1.0/'
+    'APIUrlBase': 'https://www.tuobeichina.com:8443/api/1.0/',
+    'userInfo': {}  // 全局变量，登录后的用户信息
   }
 })

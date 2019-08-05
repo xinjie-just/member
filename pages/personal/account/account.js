@@ -12,9 +12,10 @@ Page({
     APIUrlBase: app.globalData.APIUrlBase
   },
 
-  view() {
+  view(value) {
+    let cardId = value.currentTarget.dataset.cardid;
     wx.navigateTo({
-      url: "account-detail/account-detail"
+      url: `account-detail/account-detail?id=${cardId}`
     })
   },
 
@@ -23,25 +24,26 @@ Page({
    */
   onLoad: function(options) {
     let that = this;
+    let userId = "2";
     wx.request({
-      url: this.data.APIUrlBase + "userCardList?userId=" + 2,
+      url: `${this.data.APIUrlBase}userCardList?userId=${userId}`,
       method: "GET",
       header: {
         'content-type': 'application/json' // 默认值
       },
       success(res) {
-        console.log(res);
+        // console.log(res);
         that.setData({
           requestStatus: 1,
           cardList: res.data.data.cardList
         });
-        console.log(that.data.cardList);
+        // console.log(that.data.cardList);
       },
       fail(res) {
-        console.log(res.data);
+        // console.log(res.data);
         that.setData({
           requestStatus: 2,
-          message: res.data.data.message
+          message: res.data.message
         });
       }
     })

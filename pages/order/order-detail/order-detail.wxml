@@ -1,25 +1,54 @@
 <!--pages/order/order-detail/order-detail.wxml-->
-<view class="page">
-  <view class="page-header">
-    <view class="amount">58.89<text class="unit">元</text></view>
-    <view class="status">已支付</view>
-  </view>
-  <view class="page-body">
-    <view class="detail-info-item">
-      <text class="title">商品说明：</text>
-      <text class="content">奇迹健身(一品天下店)健身1次</text>
-    </view>
-    <view class="detail-info-item">
-      <text class="title">付款信息：</text>
-      <text class="content">会员卡</text>
-    </view>
-    <view class="detail-info-item">
-      <text class="title">交易时间：</text>
-      <text class="content">2017年10月23日 10:23:34</text>
-    </view>
-    <view class="detail-info-item">
-      <text class="title">交易编号：</text>
-      <text class="content">20190413181818123456</text>
-    </view>
-  </view>
+<view class="weui-loadmore" wx:if="{{requestStatus == 0}}">
+  <view class="weui-loading"></view>
+  <view class="weui-loadmore__tips">正在加载</view>
 </view>
+
+<block wx:if="{{requestStatus == 1}}">
+  <view class="page" wx:if="{{order}}">
+    <view class="page-header">
+      <view class="amount">{{order.orderTotal}}
+        <text class="unit">元</text>
+      </view>
+      <view class="status" wx:if="{{order.status == 10}}">已下单</view>
+      <view class="status" wx:elif="{{order.status == 20}}">取消</view>
+      <view class="status" wx:elif="{{order.status == 30}}">已付款</view>
+      <view class="status" wx:elif="{{order.status == 40}}">已退款</view>
+    </view>
+    <view class="page-body">
+      <view class="detail-info-item">
+        <text class="title">商品说明：</text>
+        <text class="content">{{order.remark}}</text>
+      </view>
+      <view class="detail-info-item">
+        <text class="title">付款信息：</text>
+        <text class="content">会员卡{{order.membercardInfoId}}</text>
+      </view>
+      <view class="detail-info-item">
+        <text class="title">交易时间：</text>
+        <text class="content">{{order.updatedDate}}</text>
+      </view>
+      <view class="detail-info-item">
+        <text class="title">交易编号：</text>
+        <text class="content">{{order.orderNo}}</text>
+      </view>
+    </view>
+  </view>  
+  <view class="page" wx:else>
+    <view class="weui-loadmore weui-loadmore_line">
+      <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无订单信息</view>
+    </view>
+  </view>
+</block>
+
+<block wx:if="{{requestStatus == 2}}">
+  <view class="weui-msg">
+    <view class="weui-msg__icon-area">
+      <icon type="warn" size="93"></icon>
+    </view>
+    <view class="weui-msg__text-area">
+      <view class="weui-msg__title">失败</view>
+      <view class="weui-msg__desc">{{message}}</view>
+    </view>
+  </view>
+</block>

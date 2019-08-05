@@ -1,4 +1,4 @@
-<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+<view class="page">
   <view class="page__bd">
     <view class="weui-cells__title">手机号登录</view>
     <view class="weui-cells weui-cells_after-title">
@@ -7,19 +7,19 @@
           <input class="weui-input" name="phone" placeholder="请输入手机号" bindblur="getPhone" />
         </view>
         <view class="weui-cell__ft">
-          <button class="weui-vcode-btn" disabled="{{!codeBtnEnabled}}" catchtap="getCode">{{codeTip}}</button>
+          <button class="weui-vcode-btn" type="default" disabled="{{!codeBtnEnabled}}" catchtap="getPhoneCode">{{codeTip}}</button>
         </view>
       </view>
       <view class="weui-cell weui-cell_input weui-cell_vcode">
         <view class="weui-cell__bd">
-          <input class="weui-input" name="code" placeholder="请输入验证码" />
+          <input class="weui-input" name="code" placeholder="请输入验证码" bindblur="getCode" />
         </view>
       </view>
     </view>
-    <view class="weui-cells__tips">{{errorInfo}}</view>
+    <view class="weui-cells__tips">{{phoneErrorInfo}}{{codeErrorInfo}}</view>
 
     <view class="weui-btn-area">
-      <button class="weui-btn" type="primary" bindtap="showTopTips">登录</button>
+      <button class="weui-btn" type="primary" disabled="{{!loginBtnEnabled}}" bindtap="phoneLogin">登录</button>
     </view>
   </view>
 </view>

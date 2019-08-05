@@ -6,7 +6,7 @@
 
 <block wx:if="{{requestStatus == 1}}">
   <view class="card-list" wx:if="{{cardList.length}}">
-    <view class="card-item" wx:for="{{cardList}}" wx:key="item.id" bindtap="view">
+    <view class="card-item" wx:for="{{cardList}}" wx:key="item.id" bindtap="view" data-cardId="{{item.id}}">
       <view class="title">{{item.cardNo}}({{item.remark}})</view>
       <view class="info">
         <text class="date">{{item.validPeriodEndDate}}到期</text>
@@ -14,7 +14,7 @@
       </view>
     </view>
   </view>
-  <view class="card-list" wx:if="{{!cardList.length}}">
+  <view class="card-list" wx:else>
     <view class="weui-loadmore weui-loadmore_line">
       <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无数据</view>
     </view>

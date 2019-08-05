@@ -1,28 +1,53 @@
 <!--账户详情-->
-<view class="account-details">
+<view class="weui-loadmore" wx:if="{{requestStatus == 0}}">
+  <view class="weui-loading"></view>
+  <view class="weui-loadmore__tips">正在加载</view>
+</view>
+
+<block wx:if="{{requestStatus == 1}}">
+  <view class="account-details" wx:if="{{card}}">
     <view class="balance">
-        <view class="heading">账户余额(元)</view>
-        <view class="body">2030.85</view>
+      <view class="heading">账户余额(元)</view>
+      <view class="body">{{card.withDrawTotal}}</view>
     </view>
     <view class="account-details-item member-card">
-        <text class="heading">会员卡一：</text>
-        <text class="body">火锅店一</text>
+      <text class="heading">{{card.cardNo}}：</text>
+      <text class="body">{{card.remark}}</text>
     </view>
     <view class="account-details-item desc">
-        <text class="heading">包含项目：</text>
-        <text class="body">健身和休闲娱乐</text>
+      <text class="heading">包含项目：</text>
+      <text class="body">{{card.remark}}</text>
     </view>
     <view class="account-details-item start-date">
-        <text class="heading">充值日期：</text>
-        <text class="body">2018-12-14</text>
+      <text class="heading">充值日期：</text>
+      <text class="body">{{card.effectiveInvestResetDate}}</text>
     </view>
     <view class="account-details-item end-date">
-        <text class="heading">到期日期：</text>
-        <text class="body">2019-12-14</text>
+      <text class="heading">到期日期：</text>
+      <text class="body">{{card.validPeriodStartDate}}</text>
     </view>
-</view>
+  </view>
+  <view class="account-details" wx:else>
+    <view class="weui-loadmore weui-loadmore_line">
+      <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无会员卡信息</view>
+    </view>
+  </view>
+</block>
+
 <view class="weui-footer weui-footer_fixed-bottom">
-    <view class="weui-footer__links">
-        <navigator url="../questions-answers/questions-answers" class="weui-footer__link">常见问题？</navigator>
-    </view>
+  <view class="weui-footer__links">
+    <navigator url="../questions-answers/questions-answers" class="weui-footer__link">常见问题？</navigator>
+  </view>
 </view>
+
+<block wx:if="{{requestStatus == 2}}">
+  <view class="weui-msg">
+    <view class="weui-msg__icon-area">
+      <icon type="warn" size="93"></icon>
+    </view>
+    <view class="weui-msg__text-area">
+      <view class="weui-msg__title">失败</view>
+      <view class="weui-msg__desc">{{message}}</view>
+    </view>
+  </view>
+</block>

@@ -1,36 +1,46 @@
 <!--pages/order/order.wxml-->
-<view class="page" wx:if="{{!noData}}">
-    <view class="page__hd">        
-        <view class="weui-cell weui-cell_select">
-            <view class="weui-cell__hd weui-cell__hd_in-select-after">
-                <view class="weui-label">日期</view>
-            </view>
-            <view class="weui-cell__bd">
-                <picker mode="date" value="{{date}}" start="2015-09" end="2019-09" bindtap="clicktap" fields="month" bindchange="bindDateChange">
-                    <view class="weui-select weui-select_in-select-after">{{date}}</view>
-                </picker>
-            </view>
-        </view>
-    </view>
-    <view class="page__bd">        
-        <view class="weui-cells weui-cells_after-title">
-            <view class="weui-cell" bindtap="view">
-                <view class="weui-cell__bd">奇迹健身(一品天下店)</view>
-                <view class="weui-cell__ft">2016年6月23日 15:00:00</view>
-            </view>
-            <view class="weui-cell" bindtap="view">
-                <view class="weui-cell__bd">奇迹健身(天府广场店)</view>
-                <view class="weui-cell__ft">2016年6月3日 08:00:00</view>
-            </view>
-            <view class="weui-cell" bindtap="view">
-                <view class="weui-cell__bd">奇迹健身</view>
-                <view class="weui-cell__ft">2016年6月23日 15:00:00</view>
-            </view>
-        </view>
-    </view>
+<view class="weui-loadmore" wx:if="{{requestStatus == 0}}">
+  <view class="weui-loading"></view>
+  <view class="weui-loadmore__tips">正在加载</view>
 </view>
+<block wx:if="{{requestStatus == 1}}">
+  <view class="page" wx:if="{{orderList.length}}">
+    <view class="page__hd">
+      <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd weui-cell__hd_in-select-after">
+          <view class="weui-label">日期</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker mode="date" value="{{date}}" start="2015-09" end="2019-09" bindtap="clicktap" fields="month" bindchange="bindDateChange">
+            <view class="weui-select weui-select_in-select-after">{{date}}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class="page__bd">
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell" wx:for="{{orderList}}" wx:key="item.id" data-orderId="{{item.id}}" bindtap="view">
+          <view class="weui-cell__bd">{{item.remark}}</view>
+          <view class="weui-cell__ft">{{item.updatedDate}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="account-details" wx:else>
+    <view class="weui-loadmore weui-loadmore_line">
+      <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无订单</view>
+    </view>
+  </view>
+</block>
 
-<view class="page no-data-container" wx:if="{{noData}}">
-  <view class="iconfont icon-no-data no-data-icon"></view>
-  <view class="no-data-text">暂无交易记录</view>
-</view>
+<block wx:if="{{requestStatus == 2}}">
+  <view class="weui-msg">
+    <view class="weui-msg__icon-area">
+      <icon type="warn" size="93"></icon>
+    </view>
+    <view class="weui-msg__text-area">
+      <view class="weui-msg__title">失败</view>
+      <view class="weui-msg__desc">{{message}}</view>
+    </view>
+  </view>
+</block>

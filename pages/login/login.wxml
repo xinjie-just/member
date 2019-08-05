@@ -6,7 +6,10 @@
     <button open-type="getUserInfo" lang="zh_CN" class="wechat-login" bindgetuserinfo="onGotUserInfo">
       <text class="iconfont icon-wechat"></text>微信用户快捷登录
     </button>
-    <button class="phone-login" catchtap="phoneLogin">
+    <!-- <button class="phone-login" catchtap="phoneCodeLogin">
+      <text class="iconfont icon-phone"></text>手机号验证码登录
+    </button> -->
+    <button class="phone-login" catchtap="phonePwdLogin">
       <text class="iconfont icon-phone"></text>手机号登录
     </button>
   </view>

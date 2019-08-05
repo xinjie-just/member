@@ -1,4 +1,6 @@
 // pages/login/login.js
+let app = getApp();
+
 Page({
 
   /**
@@ -8,9 +10,15 @@ Page({
 
   },
 
-  phoneLogin: function (event) {
+  phoneCodeLogin: function (event) {
     wx.navigateTo({
       url: 'phone-login/phone-login',
+    })
+  },
+
+  phonePwdLogin: function (event) {
+    wx.navigateTo({
+      url: 'pwd-login/pwd-login',
     })
   },
 
@@ -24,7 +32,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // console.log(app.globalData.userInfo);
   },
 
   /**
@@ -38,7 +46,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    console.log(app.globalData.userInfo);
   },
 
   /**
