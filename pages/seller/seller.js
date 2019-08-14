@@ -1,13 +1,18 @@
 // pages/seller/seller.js
+let app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    sellers: ["所有商家", "已联盟商家", "未联盟商家"],
-    sellerIndex: 0,
-    noData: false
+    userInfo: {},
+    // sellers: ["所有商家", "已联盟商家", "未联盟商家"],
+    sellerIndex: 0,    
+    requestStatus: 0,  // 0.加载中，1.成功，2.失败
+    message: "",
+    sellerList: [],
+    APIUrlBase: app.globalData.APIUrlBase
   },
 
   bindSellerChange: function (e) {
@@ -22,7 +27,29 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let userInfo = app.globalData.userInfo;
+    this.setData({ userInfo: userInfo });
+    let [that, userId, cardId] = [this, userInfo.id, userInfo.cardId || 0];
+    wx.request({
+      url: `${this.data.APIUrlBase}getShopUnionList?userId=${userId}&cardId=${cardId}`,
+      method: "GET",
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success(res) {
+        console.log(res.data);
+        that.setData({
+          requestStatus: 1,
+          sellerList: res.data.data.shopList
+        });
+      },
+      fail(res) {
+        that.setData({
+          requestStatus: 2,
+          message: res.data.message
+        });
+      }
+    })
   },
 
   /**

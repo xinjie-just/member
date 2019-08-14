@@ -8,7 +8,7 @@
   <view class="account-details" wx:if="{{card}}">
     <view class="balance">
       <view class="heading">账户余额(元)</view>
-      <view class="body">{{card.withDrawTotal}}</view>
+      <view class="body">{{card.amountTotal}}</view>
     </view>
     <view class="account-details-item member-card">
       <text class="heading">{{card.cardNo}}：</text>

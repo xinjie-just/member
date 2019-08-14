@@ -1,0 +1,4 @@
+/* pages/login/phone-login/phone-login.wxss */
+.weui-cells__tips {
+  color: #f30;
+}

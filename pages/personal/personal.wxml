@@ -3,7 +3,7 @@
     <view class="page__hd">
         <!--登录状态-->
         <view wx:if="{{status}}" class="page__title iconfont icon-member">
-          <text class="page__desc">18227752005</text>
+          <text class="page__desc">{{userInfo.phone}}</text>
         </view>       
     </view>
     <view class="page__bd">

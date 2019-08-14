@@ -11,6 +11,18 @@
           <view class="weui-label">日期</view>
         </view>
         <view class="weui-cell__bd">
+          <picker mode="date" value="{{date}}" start="{{startDate}}" end="{{date}}" bindtap="clicktap" fields="month" bindchange="bindDateChange">
+            <view class="weui-select weui-select_in-select-after">{{date}}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class="page__hd">
+      <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd weui-cell__hd_in-select-after">
+          <view class="weui-label">日期</view>
+        </view>
+        <view class="weui-cell__bd">
           <picker mode="date" value="{{date}}" start="2015-09" end="2019-09" bindtap="clicktap" fields="month" bindchange="bindDateChange">
             <view class="weui-select weui-select_in-select-after">{{date}}</view>
           </picker>

@@ -8,7 +8,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    loginBtnEnabled: true,
+    loginBtnEnabled: false,
     phone: "",
     pwd: "",
     error: {
@@ -63,13 +63,13 @@ Page({
           pwd: this.data.valid.pwd
         }
       });
+      this.setData({
+        phone: phone
+      });
     }
     if (this.data.valid.phone && this.data.valid.pwd) {
       this.setData({
         loginBtnEnabled: true
-      });
-      this.setData({
-        phone: phone
       });
     }
   },
@@ -96,33 +96,42 @@ Page({
           pwd: true
         }
       });
+      this.setData({
+        pwd: pwd
+      });
     }
     if (this.data.valid.phone && this.data.valid.pwd) {
       this.setData({
         loginBtnEnabled: true
       });
-      this.setData({
-        pwd: pwd
-      });
     }
   },
 
   phonePwdLogin() {
-    // let [phone, pwd] = [this.data.phone, this.data.pwd];
-    let phone = "15982280387";
-    let pwd = "123456";
+    let [phone, pwd] = [this.data.phone, this.data.pwd];
+    // let phone = "15982280387";
+    // let pwd = "123456";
     let that = this;
     wx.request({
       url: `${this.data.APIUrlBase}login?phone=${phone}&password=${pwd}`,
       success(res) {
         // console.log(res);
         // that.setData({ userInfo: res.data.data.user });
-        wx.setStorageSync("userInfo", res.data.data.user);
+        // wx.setStorageSync("userInfo", res.data.data.user);
         app.globalData.userInfo = res.data.data.user;
+        wx.navigateTo({
+          url: '../../index/index',
+        })
       },
       fail(error) {
         console.log(error);
       }
+    })
+  },
+
+  forgetPwd() {
+    wx.navigateTo({
+      url: '../../personal/safety/phone-code/phone-code',
     })
   }
 

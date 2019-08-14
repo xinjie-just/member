@@ -1,18 +1,26 @@
 // pages/personal/personal.js
+let app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    status: 1
+    userInfo: {},
+    status: 1,
+    APIUrlBase: app.globalData.APIUrlBase
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let userInfo = app.globalData.userInfo;
+    this.setData({ userInfo: userInfo });
+    let userId = userInfo.id;
+    wx.request({
+      url: `${this.data.APIUrlBase}index?userId=${userId}`,
+    })
   },
 
   /**

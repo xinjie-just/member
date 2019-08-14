@@ -1,11 +1,13 @@
+let app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    nickName: '',
-    avatarUrl: ''
+    userInfo: {},
+    phone: "",
+    APIUrlBase: app.globalData.APIUrlBase
   },
 
   toPersonal() {
@@ -18,24 +20,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    wx.showModal({
-      title: '授权登录',
-      content: '手机号快捷登录',
-      success(res) {
-        if (res.confirm) {
-          wx.getUserInfo({
-            success: function (res) {
-              var userInfo = res.userInfo;
-              this.setData({
-                nickName: userInfo.nickName,
-                avatarUrl: userInfo.avatarUrl
-              });
-            }
-          })
-        } else if (res.cancel) {
-          console.log('用户点击取消');
-        }
-      }
+    let userInfo = app.globalData.userInfo;
+    this.setData({ userInfo: userInfo });
+    let userId = userInfo.id;
+    wx.request({
+      url: `${this.data.APIUrlBase}index?userId=${userId}`,
+      
     })
   },
 

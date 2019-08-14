@@ -3,12 +3,15 @@
     <text class="iconfont icon-user"></text>盟客多多
   </view>
   <view class="login-select">
-    <button open-type="getUserInfo" lang="zh_CN" class="wechat-login" bindgetuserinfo="onGotUserInfo">
+    <!-- <button open-type="getUserInfo" lang="zh_CN" class="wechat-login" bindgetuserinfo="onGotUserInfo">
       <text class="iconfont icon-wechat"></text>微信用户快捷登录
-    </button>
+    </button> -->
     <!-- <button class="phone-login" catchtap="phoneCodeLogin">
       <text class="iconfont icon-phone"></text>手机号验证码登录
     </button> -->
+
+<!-- <button hover-class='btn_hover' class='wechat-login' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"><text class="iconfont icon-wechat"></text>微信用户快捷登录</button> -->
+
     <button class="phone-login" catchtap="phonePwdLogin">
       <text class="iconfont icon-phone"></text>手机号登录
     </button>

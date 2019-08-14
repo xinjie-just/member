@@ -2,3 +2,9 @@
 .weui-cells__tips {
   color: #f30;
 }
+.forget-pwd {
+  color: #f00;
+  text-align: right;
+  margin: 20rpx;
+  font-size: 32rpx;
+}
